@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manage Enquiries | VAULT</title>
+    <link href="/css/admin-login.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  </head>
+
+  <body>
+
+    <div class="enquiry-page">
+      <div class="enquiry-header">
+        <h1>Client Enquiries</h1>
+        <p>View and manage all client consultation requests.</p>
+      </div>
+
+      <div class="enquiry-grid">
+        <% enquiries.forEach(enquiry => { %>
+          <div class="enquiry-card">
+            <div class="enquiry-top">
+              <div>
+                <h2><%= enquiry.name %></h2>
+                <span class="service-tag">
+                  <%= enquiry.service %>
+                </span>
+              </div>
+            </div>
+            <div class="enquiry-details">
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                <%= enquiry.email %>
+              </p>
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                <%= enquiry.phone %>
+              </p>
+              <p class="date">
+                <i class="fa-regular fa-calendar"></i>
+                <%= enquiry.createdAt.toLocaleString('en-IN') %>
+              </p>
+            </div>
+            <div class="message-box">
+              <%= enquiry.message %>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+
+      <a href="/dashboard" class="back-btn">
+        ← Back To Dashboard
+      </a>
+    </div>
+
+  </body>
+</html>

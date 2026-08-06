@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manage Projects</title>
+    <link href="/css/admin-login.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  </head>
+
+  <body>
+    <div class="manage-projects-page">
+      <div class="page-header">
+        <h1>All Projects</h1>
+        <a href="/add-project" class="add-btn">
+          + Add New Project
+        </a>
+      </div>
+
+      <div class="project-grid">
+        <% projects.forEach(project => { %>
+          <div class="project-card">
+            <img src="/images/<%= project.coverImage %>" alt="<%= project.title %>"
+            >
+            <div class="project-content">
+              <h2><%= project.title %></h2>
+              <p>
+                <strong>Location:</strong>
+                <%= project.location %>
+              </p>
+              <p>
+                <strong>Category:</strong>
+                <%= project.category %>
+              </p>
+              <p>
+                <strong>Budget:</strong>
+                <%= project.budget %>
+              </p>
+
+              <div class="project-actions">
+                <a href="/edit-projects/<%= project._id %>" class="edit-btn">Edit</a>
+                <a href="/delete-project/<%= project._id %>" class="delete-btn" onclick="return confirm('Delete this project?')">Delete</a>
+              </div>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+
+      <a href="/dashboard" class="back-btn">
+        ← Back To Dashboard
+      </a>
+    </div>
+  </body>
+</html>

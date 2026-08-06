@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Admin Login | VAULT</title>
+		<link href="/css/admin-login.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+	</head>
+
+	<body>
+		<div class="admin-login-page">
+			<div class="admin-card">
+				<div class="admin-logo">
+					<img src="/images/logo-1.png" alt="Vault Logo">
+				</div>
+				<span>ADMIN PANEL</span>
+				<h1>Welcome Back</h1>
+				<p>Sign in to manage projects, enquiries and team members.</p>
+
+				<form action="/admin-login" method="POST">
+					<div class="input-box">
+						<label>Email Address</label>
+						<input type="email" name="username"	placeholder="Enter email" required>
+					</div>
+					<div class="input-box">
+						<label>Password</label>
+						<input type="password"	name="password"	placeholder="Enter password"required>
+					</div>
+					<button type="submit" class="login-btn">
+						Login
+					</button>
+				</form>
+			</div>
+		</div>
+		
+		<% if(error) { %>
+			<script>
+				alert('Invalid Email or Password!');
+			</script>
+		<% } %>
+	</body>
+</html>

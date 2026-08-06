@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Project</title>
+		<link href="/css/admin-login.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  </head>
+
+  <body>
+    <div class="admin-form-page">
+      <div class="admin-form-card">
+        <h1>Edit Project</h1>
+        <form action="/edit-projects/<%= project._id %>" method="POST" >
+          <input type="text" name="title" value="<%= project.title %>" required>
+          <br><br>
+          <input type="text" name="location" value="<%= project.location %>" required>
+          <br><br>
+          <input type="text" name="category" value="<%= project.category %>" required>
+          <br><br>
+          <input type="text" name="budget" value="<%= project.budget %>" required>
+          <br><br>
+          <textarea name="description" required>
+            <%= project.description %>
+          </textarea>
+          <br><br>
+          <input type="text" name="coverImage" value="<%= project.coverImage %>" required>
+          <br><br>
+          <button type="submit">
+            Update Project
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

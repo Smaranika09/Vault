@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add New Project | VAULT</title>
+    <link href="/css/admin-login.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  </head>
+
+  <body>
+    <div class="admin-form-page">
+      <div class="admin-form-card">
+        <h1>Add New Project</h1>
+        <form id="projectForm" action="/add-project" method="POST">
+          <label>Project Title</label>
+          <input type="text" name="title" placeholder="Project Title" required >
+
+          <label>Location</label>
+          <input type="text" name="location"  placeholder="Location" required >
+
+          <label>Category</label>
+          <select name="category" required>
+            <option value="">
+              Select Category
+            </option>
+            <option value="Interior Design">
+              Interior Design
+            </option>
+            <option value="Architecture">
+              Architecture
+            </option>
+            <option value="Luxury Decor">
+              Luxury Decor
+            </option>
+          </select>
+
+          <label>Budget</label>
+          <input type="text" name="budget" placeholder="Project Budget" required>
+
+          <label>Description</label>
+          <textarea name="description" placeholder="Project Description" required></textarea>
+
+          <label>Cover Image</label>
+          <input type="text" name="coverImage" placeholder="example- h1.jpg" required>
+
+          <button type="submit" class="save-btn">
+            Save Project         
+          </button>
+        </form>
+
+        <a href="/dashboard" class="back-btn">
+          ← Back To Dashboard
+        </a>
+      </div>
+    </div>
+
+    <% if(success) { %>
+      <script>
+        alert('Project Saved Successfully!');
+      </script>
+    <% } %>
+  </body>
+</html>

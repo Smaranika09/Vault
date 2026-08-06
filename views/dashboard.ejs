@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Admin Dashboard | VAULT</title>
+		<link href="/css/admin-login.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+	</head>
+
+	<body>
+		<div class="dashboard-page">
+			<div class="dashboard-header">
+				<div class="dashboard-logo">
+					<img src="images/logo-1.png" alt="">
+				</div>
+				<h1>VAULT ADMIN DASHBOARD</h1>
+			</div>
+			<div class="stats-grid">
+				<div class="stat-card">
+					<i class="fa-solid fa-layer-group"></i>
+					<h2>Total Projects: <%= totalProjects %></h2>
+				</div>
+				<div class="stat-card">
+					<i class="fa-solid fa-envelope"></i>
+					<h2>Total Enquiries: <%= totalEnquiries %></h2>
+				</div>
+			</div>
+			<div class="admin-actions">
+				<a href="/manage-projects" target="_blank" class="admin-btn">
+					Manage Projects
+				</a>
+        <a href="/manage-enquiries" target="_blank"  class="admin-btn">
+          See Enquiries
+        </a>
+				<a href="admin-login.html" class="logout-btn">
+					Logout
+				</a>
+			</div>
+		</div>
+	</body>
+</html>

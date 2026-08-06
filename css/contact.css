@@ -1,0 +1,85 @@
+.contact-split-section {
+	padding: 100px 0;
+	background: #141412;
+}
+.contact-meta-panel {
+	width: 38%;
+	float: left;
+}
+.contact-meta-panel span {
+	color: #C9A96E;
+	font-size: 13px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 12px;
+}
+.contact-meta-panel h2 {
+	font-size: 44px;
+	color: #F5F2EA;
+	margin-bottom: 20px;
+}
+.contact-meta-panel p {
+	color: #B8B2A8;
+	font-size: 15px;
+	line-height: 26px;
+	margin-bottom: 35px;
+	font-weight: 300;
+}
+.info-card-unit {
+	background: #0D0D0B;
+	border: 1px solid rgba(201,169,110,0.12);
+	padding: 25px 25px 25px 80px;
+	border-radius: 15px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.icu-icon {
+	position: absolute;
+	left: 25px;
+	top: 28px;
+	color: #C9A96E;
+	font-size: 24px;
+}
+.info-card-unit h4 {
+	color: #F5F2EA;
+	font-size: 18px;
+	margin-bottom: 6px;
+	font-weight: 500;
+}
+.info-card-unit p {
+	color: #B8B2A8;
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 0;
+}
+.contact-social-channels {
+	margin-top: 40px;
+	border-top: 1px solid rgba(201,169,110,0.15);
+	padding-top: 25px;
+}
+.contact-social-channels h4 {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #C9A96E;
+}
+.contact-form-panel {
+	width: 58%;
+	float: right;
+}
+
+.map-embed-section {
+	padding: 40px 0 100px 0;
+	background: #141412;
+}
+.luxury-map-frame {
+	width: 100%;
+	height: 480px;
+	border: 1px solid rgba(201, 169, 110, 0.2);
+	border-radius: 25px;
+	overflow: hidden;
+}
+.luxury-map-frame iframe {
+	filter: invert(90%) hue-rotate(180deg) brightness(45%) contrast(120%);
+}

@@ -1,0 +1,238 @@
+.project-details-hero {
+	width: 100%;
+	height: 650px;
+	margin: 10px 0;
+	border: 1px solid rgba(201, 169, 110, 0.15);
+	position: relative;
+}
+.pd-hero-title {
+	position: absolute;
+	left: 50px;
+	bottom: 60px;
+	z-index: 10;
+}
+.pd-hero-title span {
+	color: #C9A96E;
+	font-size: 14px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 12px;
+}
+.pd-hero-title h1 {
+	font-size: 72px;
+	color: #F5F2EA;
+	letter-spacing: 2px;
+}
+
+.project-split-brief {
+	padding: 100px 0;
+	background: #141412;
+}
+.pd-info-panel {
+	width: 35%;
+	float: left;
+	background: #0D0D0B;
+	border: 1px solid rgba(201, 169, 110, 0.15);
+	padding: 40px;
+	border-radius: 20px;
+}
+.pd-info-panel h3 {
+	font-size: 24px;
+	color: #F5F2EA;
+	margin-bottom: 25px;
+	border-bottom: 1px solid rgba(201,169,110,0.15);
+	padding-bottom: 10px;
+}
+.pd-info-panel ul li {
+	color: #B8B2A8;
+	font-size: 15px;
+	margin-bottom: 18px;
+	line-height: 24px;
+}
+.pd-info-panel ul li strong {
+	color: #C9A96E;
+	font-weight: 500;
+	display: block;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin-bottom: 2px;
+}
+.pd-overview-panel {
+	width: 60%;
+	float: right;
+}
+.pd-overview-panel span {
+	color: #C9A96E;
+	font-size: 13px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 10px;
+}
+.pd-overview-panel h2 {
+	font-size: 44px;
+	color: #F5F2EA;
+	margin-bottom: 25px;
+}
+.pd-overview-panel p {
+	color: #B8B2A8;
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+
+.pd-process-breakdown {
+	padding: 100px 0;
+	background: #0A0A08;
+	border-top: 1px solid rgba(201, 169, 110, 0.15);
+}
+.pd-process-row {
+	margin-top: 40px;
+}
+.pd-proc-card {
+	width: 31%;
+	float: left;
+	margin-right: 3.5%;
+	background: #11110E;
+	border: 1px solid rgba(201, 169, 110, 0.08);
+	padding: 40px;
+	border-radius: 15px;
+}
+.pd-proc-card:last-child {
+	margin-right: 0;
+}
+.pd-proc-card span {
+	color: #C9A96E;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+	display: block;
+	margin-bottom: 15px;
+}
+.pd-proc-card h4 {
+	font-size: 22px;
+	color: #F5F2EA;
+	margin-bottom: 12px;
+}
+.pd-proc-card p {
+	color: #B8B2A8;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+}
+
+.pd-gallery-section {
+	padding: 100px 0;
+	background: #141412;
+	border-top: 1px solid rgba(201, 169, 110, 0.15);
+}
+.pd-gallery-grid {
+	margin-top: 40px;
+}
+.pd-gal-img {
+	width: 23.5%;
+	height: 320px;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 20px;
+	border: 1px solid rgba(201, 169, 110, 0.15);
+	overflow: hidden;
+	border-radius: 12px;
+}
+.pd-gallery-grid .item-w2 {
+	width: 49%;
+}
+.pd-gal-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(60%);
+	transition: 0.5s;
+}
+.pd-gal-img:hover img {
+	filter: brightness(85%);
+}
+
+.pd-materials-section {
+	padding: 100px 0;
+	background: #080808;
+	border-top: 1px solid rgba(201, 169, 110, 0.15);
+}
+.luxury-specs-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 40px;
+	background: #0D0D0B;
+	border: 1px solid rgba(201, 169, 110, 0.15);
+}
+.luxury-specs-table th, 
+.luxury-specs-table td {
+	padding: 24px 30px;
+	text-align: left;
+	border-bottom: 1px solid rgba(201, 169, 110, 0.1);
+}
+.luxury-specs-table th {
+	background: #141412;
+	color: #C9A96E;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+}
+.luxury-specs-table td {
+	color: #D8D2C8;
+	font-size: 15px;
+	font-weight: 300;
+}
+.luxury-specs-table tr:hover td {
+	background: rgba(201, 169, 110, 0.03);
+	color: #F5F2EA;
+}
+
+.pd-feedback-section {
+	padding: 120px 0;
+	background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.85)), url('images/contact.png') no-repeat center center;
+	background-size: cover;
+}
+.pd-feedback-card {
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.pd-quote-icon {
+	font-family: 'Playfair Display', serif;
+	font-size: 120px;
+	color: rgba(201, 169, 110, 0.2);
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+.pd-feedback-card p {
+	font-size: 22px;
+	color: #DDD7CC;
+	line-height: 42px;
+	font-weight: 300;
+	font-style: italic;
+	margin-bottom: 25px;
+}
+.pd-feedback-card h3 {
+	color: #C9A96E;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.related-projects-section {
+	padding: 100px 0;
+	background: #141412;
+	border-top: 1px solid rgba(201, 169, 110, 0.15);
+}
+.related-projects-section .project-card-item {
+	width: 48.5%;
+	margin-right: 3%;
+}
+.related-projects-section .project-card-item:last-child {
+	margin-right: 0;
+}
